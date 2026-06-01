@@ -35,7 +35,7 @@ The dashboard is organized into two tabs:
 This repository ships with `crashes_california.csv`.
 
 > **Note on the dataset:** The full SWITRS extract contains **1.7+ million rows**,
-> which is far too large to host on GitHub. The file in this repo is the
+> which is too large to host on GitHub. The file in this repo is the
 > **first 100,000 rows** of that dataset, taken with pandas (`df.head(100000)`).
 > Because those rows were not sorted by date before slicing, the sample happens to
 > cover crashes from **2014 through mid-2021** rather than the full 2014–2023 range
@@ -68,29 +68,20 @@ install.packages(c("shiny", "tidyverse", "lubridate", "leaflet", "plotly"))
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/<your-username>/california-auto-crash-analytics.git
-   cd california-auto-crash-analytics
+   git clone https://github.com/nguyen-josh/california_auto_crashes.git
+   cd california_auto_crashes
    ```
 
 2. **Install the R packages** listed above (if you haven't already).
 
-3. **Point the script at the data.** The script currently contains two machine-specific
-   lines you'll want to adjust before running:
-
-   - **Line 10** sets a hard-coded working directory:
-     ```r
-     setwd("C:/Users/Josh/Downloads")
-     ```
-     Either delete this line and run from the project folder, or change it to wherever
-     you cloned the repo.
+3. **Point the script at the data.** Change the script to read the file in the repo.
 
    - **Line 13** reads the data file by name:
      ```r
      file = "crashes_california_2014_2023.csv",
      ```
      The sample file in this repo is named `crashes_california.csv`, so update this to
-     match (or rename the CSV). If you later swap in the full dataset, just point this
-     line at that file instead.
+     match (or rename the CSV).
 
 4. **Run the app.** From R or RStudio:
 
