@@ -9,6 +9,8 @@ The data comes from California's
 [Statewide Integrated Traffic Records System (SWITRS)](https://iswitrs.chp.ca.gov/),
 maintained by the California Highway Patrol.
 
+https://github.com/user-attachments/assets/3c312ad2-6498-4196-9280-4578585e8f54
+
 ---
 
 ## Features
