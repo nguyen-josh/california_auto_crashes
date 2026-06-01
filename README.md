@@ -38,7 +38,7 @@ This repository ships with `crashes_california.csv`.
 
 > **Note on the dataset:** The full SWITRS extract contains **1.7+ million rows**,
 > which is too large to host on GitHub. The file in this repo is the
-> **first 100,000 rows** of that dataset, taken with pandas (`df.head(100000)`).
+> **first 100,000 rows** of this dataset after it was processed with MySQL).
 > Because those rows were not sorted by date before slicing, the sample happens to
 > cover crashes from **2014 through mid-2021** rather than the full 2014–2023 range
 > of the complete dataset. The app and charts work the same way on the sample; you
