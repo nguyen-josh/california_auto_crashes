@@ -8,7 +8,7 @@ library(leaflet)
 library(plotly)
 
  crashes = read_csv(
-   file = "crashes_california_2014_2023.csv", 
+   file = "crashes_california.csv", 
    col_types = list(
      col_double(),    #  1) CASE_ID
      col_double(),    #  2) ACCIDENT_YEAR
