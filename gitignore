@@ -1,0 +1,50 @@
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+.RDataTmp
+
+# User-specific files
+.Ruserdata
+
+# Example code in package build process
+*-Ex.R
+
+# Output files from R CMD build / check
+/*.tar.gz
+/*.Rcheck/
+
+# RStudio files
+.Rproj.user/
+*.Rproj
+
+# produced vignettes
+vignettes/*.html
+vignettes/*.pdf
+
+# R Environment Variables
+.Renviron
+
+# renv (if used)
+renv/library/
+renv/local/
+renv/staging/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# The full SWITRS dataset is too large for GitHub (1.7M+ rows).
+# Only the 100k-row sample (crashes_california.csv) is tracked.
+# Uncomment the line below if you keep the full extract locally:
+# crashes_california_2014_2023.csv
